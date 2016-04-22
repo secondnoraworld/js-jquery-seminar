@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript練習用ファイル</title>
+
+  <script type="text/javascript">
+    function replace() {
+      document.getElementById('e1').textContent = '置換しました';
+
+      var e2 = document.createElement('div');
+      e2.setAttribute('id', 'e2');
+      e2.textContent = '要素を追加しました';
+      document.body.appendChild(e2);
+    }
+  </script>
+</head>
+<body>
+
+  <p>
+    <form id="main">
+      <input type="button" id="btnReplace" value="置換" onClick="replace();" />
+    </form>
+  </p>
+  <div id="e1">この部分を置換</div>
+
+</body>
+</html>
